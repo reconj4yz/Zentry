@@ -6,7 +6,7 @@ const [hasClicked, setHasClicked] = useState(false);
 const [isLoading, setIsLoading] = useState(true);
 const [loadedVideos, setLoadedVideos] = useState(0);
 
-const totalVideos=3;
+const totalVideos=4;
 const nextVidRef = useRef(null)
 
 const upcomingVidIndex = (currentIndex % totalVideos ) + 1 
@@ -55,6 +55,10 @@ const getVidSrc = (index) => `videos/hero-${index}.mp4`
           onLoadedData={handleVidLoad}
         />
       </div>
+      <h1 className='special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75'>
+        G<b>a</b>ming
+         </h1>
+
     </div>
   )
 }
